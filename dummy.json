@@ -1,0 +1,41 @@
+[
+    {
+        "name" : "ASSET",
+        "value" : 11347.78,
+        "child" : 
+        [{
+            "name" : "Current Asset",
+            "value" : 11347.78,
+            "child" : 
+            [{
+                "name" : "Bank and Cash Accounts",
+                "value" : 102.78,
+                "name1" : "Receivables",
+                "value1" : 10495,
+                "name2" : "Current Asset",
+                "value2" : 750,
+                "name3" : "Prepayments",
+                "value3" : 0
+            }],
+            "name1" : "Plus Fixed Assets",
+            "value1" : 0,
+
+            "name2" : "Plus Non-current Assets",
+            "value2" : 0
+        }]
+    },
+    {
+        "name" : "LIABILITIES",
+        "child" : 
+        [{
+            "name" : "Current Liabilities",
+            "child" : 
+            [{
+                "name" : "Current Liabilities",
+                "value" : 0,
+                "name1" : "Payables",
+                "value1" : 15749.99
+            }]
+        }]
+    }
+]
