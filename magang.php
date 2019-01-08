@@ -43,7 +43,7 @@
                         
                         <td>
                         <?php
-                            echo "Padjadjaran Univeristy.<br>";
+                            echo "Padjadjaran University.<br>";
                             echo "John Doe<br>";
                             echo "john@example.com";
                         ?>
@@ -56,13 +56,13 @@
         <tr class="heading">
             <td>
             <?php
-                echo "Payment Method";
+                echo "ASSETS";
             ?>
             </td>
             
             <td>
             <?php
-                echo "Check #";
+                echo "3000";
             ?>
             </td>
         </tr>
@@ -84,13 +84,13 @@
         <tr class="heading">
             <td>
             <?php
-                echo "Item";
+                echo "Liabilities";
             ?>
             </td>
             
             <td>
             <?php
-                echo "Price";
+                echo "2000";
             ?>
             </td>
         </tr>
@@ -137,6 +137,32 @@
             </td>
         </tr>
         
+        <tr class="heading">
+            <td>
+            <?php
+                echo "EQUITY";
+            ?>
+            </td>
+            
+            <td>
+            <?php
+                echo "2000";
+            ?>
+            </td>
+        </tr>
+         <tr class="details">
+            <td>
+            <?php
+                echo "Check";
+            ?>
+            </td>
+            
+            <td>
+            <?php
+                echo "1000";
+            ?>
+            </td>
+        </tr>
         <tr class="total">
             <td></td>
             
