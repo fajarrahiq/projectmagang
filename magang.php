@@ -8,7 +8,6 @@
 </head> 
 
 <body>
- 
 <div class="invoice-box">
     <table cellpadding="0" cellspacing="0">
         <tr class="top">
@@ -53,6 +52,43 @@
             </td>
         </tr>
 
+<<<<<<< HEAD
+        
+            <?php
+                $url = 'dummy.json'; // path to your JSON file
+                $data = file_get_contents($url); // put the contents of the file into a variable
+                $dummys = json_decode($data, true); // decode the JSON feed
+
+                foreach ($dummys as $dummy) { ?>
+                <tr class="heading">
+                    <td>
+                        <?php echo $dummy['name'];?>
+                        <td>
+                            <?php
+                                echo $dummy['value'];
+                            ?>
+                        </td>
+                        <?php foreach ($dummy['child'] as $child) { ?>
+                                <tr class="details">
+                                    <td>
+                                    <?php
+                                        echo $child['name'];
+                                    ?>
+                                    </td>
+                                    
+                                    <td>
+                                    <?php
+                                        echo "1000";
+                                    ?>
+                                    </td>
+                                </tr>
+                        <?php } ?>
+                    
+                    </td>
+                    <!-- <?php } ?> -->
+                </tr>
+            
+=======
         <tr class="heading">
             <td>
             <?php
@@ -114,6 +150,7 @@
             ?>
             </td>
         </tr>
+>>>>>>> 6ca8a6103b8c50497a36ec3ac6c8f32e74e99472
         
         <tr class="item">
             <td>
