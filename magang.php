@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="style.css">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="dummy.json"></script>
     <title>Magang</title>
 </head> 
 
@@ -42,7 +42,7 @@
                         
                         <td>
                         <?php
-                            echo "Padjadjaran Univeristy.<br>";
+                            echo "Padjadjaran University.<br>";
                             echo "John Doe<br>";
                             echo "john@example.com";
                         ?>
@@ -52,6 +52,7 @@
             </td>
         </tr>
 
+<<<<<<< HEAD
         
             <?php
                 $url = 'dummy.json'; // path to your JSON file
@@ -87,6 +88,69 @@
                     <!-- <?php } ?> -->
                 </tr>
             
+=======
+        <tr class="heading">
+            <td>
+            <?php
+                echo "ASSETS";
+            ?>
+            </td>
+            
+            <td>
+            <?php
+                echo "3000";
+            ?>
+            </td>
+        </tr>
+
+        <tr class="details">
+                <td>
+
+                  <input id="check" type="checkbox" name="menu"/>
+                    
+                    <label for="check">
+                        <?php
+                            echo "Bank and Accounts"
+                        ?>
+                    </label>
+
+                  <ul class="submenu">
+                  <?php
+                    echo "10401 Banks"
+                    ?>
+                  </ul>
+
+                <td>
+        </tr>
+
+        
+        
+        <tr class="details">
+            <td>
+            <?php
+            ?>
+            </td>
+            
+            <td>
+            <?php
+            ?>
+            </td>
+        </tr>
+        
+        <tr class="heading">
+            <td>
+            <?php
+                echo "Liabilities";
+            ?>
+            </td>
+            
+            <td>
+            <?php
+                echo "2000";
+            ?>
+            </td>
+        </tr>
+>>>>>>> 6ca8a6103b8c50497a36ec3ac6c8f32e74e99472
         
         <tr class="item">
             <td>
@@ -130,6 +194,32 @@
             </td>
         </tr>
         
+        <tr class="heading">
+            <td>
+            <?php
+                echo "EQUITY";
+            ?>
+            </td>
+            
+            <td>
+            <?php
+                echo "2000";
+            ?>
+            </td>
+        </tr>
+         <tr class="details">
+            <td>
+            <?php
+                echo "Check";
+            ?>
+            </td>
+            
+            <td>
+            <?php
+                echo "1000";
+            ?>
+            </td>
+        </tr>
         <tr class="total">
             <td></td>
             
