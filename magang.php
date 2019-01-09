@@ -67,14 +67,15 @@
             </td>
         </tr>
 
-        <tr class="heading">
+        <tr class="details">
                 <td>
 
                   <input id="check" type="checkbox" name="menu"/>
+                    
                     <label for="check">
-                    <?php
-                    echo "Bank and Accounts"
-                    ?>
+                        <?php
+                            echo "Bank and Accounts"
+                        ?>
                     </label>
 
                   <ul class="submenu">

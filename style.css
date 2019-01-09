@@ -1,6 +1,4 @@
- <style>
-  
-	body{
+body{
 		font-family:'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
 		text-align:center;
 		color:#777;
@@ -155,13 +153,13 @@
 	  /*style for the second level menu*/
 	  ul.submenu{
 		max-height:0;
-		padding:0;
+		padding:10;
 		overflow:hidden;
 		list-style-type:none;
-		background:#ddd;
+		background:#FFFF;
 		box-shadow:0 0 1px rgba(255,255,255,.5);
 		transition:max-height 0.5s ease-out;
-		position:absolute;
+		position:relative;
 		min-width:100%;
 	  }
 	  
@@ -178,5 +176,3 @@
 	  ul.submenu li a:hover{
 		background:rgba(255,255,255,.5);
 	  }
-	  
-    </style>
