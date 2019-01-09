@@ -76,6 +76,7 @@
                 "child"  :
                 [{
                     "name"   : "Current Year Unallocated Earnings ",
+                    "value"  : 0,
                     "child"  :
                     [{
                         "name"   : "Current Year Earnings ",
@@ -89,7 +90,6 @@
                 "name1"  : "Retained Earnings",
                 "value1" : 0
             }
-<<<<<<< HEAD
         }
     ],
     [
@@ -98,37 +98,4 @@
             "value" : 11347.78
         }
     ]
-=======
-        ],
-        "name1" : "Plus Non-current Liabilities",
-        "value1" : 0
-    },
-    {
-        "name"   : "Unallocated Earnings",
-        "child"  :
-        [{
-            "name"   : "Current Year Unallocated Earnings ",
-            "child"  :
-            [{
-                "name"   : "Current Year Earnings ",
-                "value"  : 0,
-                "name1"  : "Current Year Allocated Earnings ",
-                "value2" : 0
-            }],
-            "name1"  : "Previous Years Unallocated Earnings",
-            "value2" : -4402.21
-        }],
-        "name1"  : "Retained Earnings",
-        "value1" : 0
-    },
-    {
-        "name"  : "LIABILITIES + EQUITY",
-        "value" : 11347.78
-    }
-<<<<<<< HEAD
 ]
-=======
->>>>>>> 9e4e4faf1f89fa02923eb19b6b2aa16c40470a62
-]
-
->>>>>>> 6ca8a6103b8c50497a36ec3ac6c8f32e74e99472
