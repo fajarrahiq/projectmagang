@@ -51,58 +51,47 @@
                 </table>
             </td>
         </tr>
-
-<<<<<<< HEAD
-        
             <?php
                 $url = 'dummy.json'; // path to your JSON file
                 $data = file_get_contents($url); // put the contents of the file into a variable
                 $dummys = json_decode($data, true); // decode the JSON feed
-
                 foreach ($dummys as $dummy) { ?>
                 <tr class="heading">
                     <td>
-                        <?php echo $dummy['name'];?>
+                        <?php echo $dummy[0]['name'];?>
                         <td>
                             <?php
-                                echo $dummy['value'];
+                                echo $dummy[0]['value'];
                             ?>
                         </td>
-                        <?php foreach ($dummy['child'] as $child) { ?>
+                        <?php foreach ($dummy[0]['child'] as $child) { ?>
                                 <tr class="details">
                                     <td>
-                                    <?php
-                                        echo $child['name'];
-                                    ?>
+                                        <input id="check" type="checkbox" name="menu"/>
+                                        <label for="check"> 
+                                            <?php
+                                                echo $child.[0];
+                                            ?>
+                                        </label>
+
+                                        <ul class="submenu">
+                                            <?php
+                                                echo "10401 Banks"
+                                            ?>
+                                        </ul>
                                     </td>
                                     
-                                    <td>
+                                    <!-- <td>
                                     <?php
                                         echo "1000";
                                     ?>
-                                    </td>
+                                    </td> -->
                                 </tr>
                         <?php } ?>
                     
                     </td>
                     <!-- <?php } ?> -->
                 </tr>
-            
-=======
-        <tr class="heading">
-            <td>
-            <?php
-                echo "ASSETS";
-            ?>
-            </td>
-            
-            <td>
-            <?php
-                echo "3000";
-            ?>
-            </td>
-        </tr>
-
         <tr class="details">
                 <td>
 
@@ -150,7 +139,6 @@
             ?>
             </td>
         </tr>
->>>>>>> 6ca8a6103b8c50497a36ec3ac6c8f32e74e99472
         
         <tr class="item">
             <td>
