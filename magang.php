@@ -8,7 +8,6 @@
 </head> 
 
 <body>
- 
 <div class="invoice-box">
     <table cellpadding="0" cellspacing="0">
         <tr class="top">
@@ -52,48 +51,42 @@
                 </table>
             </td>
         </tr>
+
         
-        <tr class="heading">
-            <td>
             <?php
-                echo "Payment Method";
-            ?>
-            </td>
+                $url = 'dummy.json'; // path to your JSON file
+                $data = file_get_contents($url); // put the contents of the file into a variable
+                $dummys = json_decode($data, true); // decode the JSON feed
+
+                foreach ($dummys as $dummy) { ?>
+                <tr class="heading">
+                    <td>
+                        <?php echo $dummy['name'];?>
+                        <td>
+                            <?php
+                                echo $dummy['value'];
+                            ?>
+                        </td>
+                        <?php foreach ($dummy['child'] as $child) { ?>
+                                <tr class="details">
+                                    <td>
+                                    <?php
+                                        echo $child['name'];
+                                    ?>
+                                    </td>
+                                    
+                                    <td>
+                                    <?php
+                                        echo "1000";
+                                    ?>
+                                    </td>
+                                </tr>
+                        <?php } ?>
+                    
+                    </td>
+                    <!-- <?php } ?> -->
+                </tr>
             
-            <td>
-            <?php
-                echo "Check #";
-            ?>
-            </td>
-        </tr>
-        
-        <tr class="details">
-            <td>
-            <?php
-                echo "Check";
-            ?>
-            </td>
-            
-            <td>
-            <?php
-                echo "1000";
-            ?>
-            </td>
-        </tr>
-        
-        <tr class="heading">
-            <td>
-            <?php
-                echo "Item";
-            ?>
-            </td>
-            
-            <td>
-            <?php
-                echo "Price";
-            ?>
-            </td>
-        </tr>
         
         <tr class="item">
             <td>
