@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="style.css">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="dummy.json"></script>
     <title>Magang</title>
 </head> 
 
@@ -43,7 +43,7 @@
                         
                         <td>
                         <?php
-                            echo "Padjadjaran Univeristy.<br>";
+                            echo "Padjadjaran University.<br>";
                             echo "John Doe<br>";
                             echo "john@example.com";
                         ?>
@@ -52,31 +52,50 @@
                 </table>
             </td>
         </tr>
-        
+
         <tr class="heading">
             <td>
             <?php
-                echo "Payment Method";
+                echo "ASSETS";
             ?>
             </td>
             
             <td>
             <?php
-                echo "Check #";
+                echo "3000";
             ?>
             </td>
         </tr>
+
+        <tr class="heading">
+                <td>
+
+                  <input id="check" type="checkbox" name="menu"/>
+                    <label for="check">
+                    <?php
+                    echo "Bank and Accounts"
+                    ?>
+                    </label>
+
+                  <ul class="submenu">
+                  <?php
+                    echo "10401 Banks"
+                    ?>
+                  </ul>
+
+                <td>
+        </tr>
+
+        
         
         <tr class="details">
             <td>
             <?php
-                echo "Check";
             ?>
             </td>
             
             <td>
             <?php
-                echo "1000";
             ?>
             </td>
         </tr>
@@ -84,13 +103,13 @@
         <tr class="heading">
             <td>
             <?php
-                echo "Item";
+                echo "Liabilities";
             ?>
             </td>
             
             <td>
             <?php
-                echo "Price";
+                echo "2000";
             ?>
             </td>
         </tr>
@@ -137,6 +156,32 @@
             </td>
         </tr>
         
+        <tr class="heading">
+            <td>
+            <?php
+                echo "EQUITY";
+            ?>
+            </td>
+            
+            <td>
+            <?php
+                echo "2000";
+            ?>
+            </td>
+        </tr>
+         <tr class="details">
+            <td>
+            <?php
+                echo "Check";
+            ?>
+            </td>
+            
+            <td>
+            <?php
+                echo "1000";
+            ?>
+            </td>
+        </tr>
         <tr class="total">
             <td></td>
             
