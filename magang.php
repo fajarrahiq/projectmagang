@@ -52,7 +52,7 @@
                 </table>
             </td>
         </tr>
-        
+
         <tr class="heading">
             <td>
             <?php
@@ -66,17 +66,36 @@
             ?>
             </td>
         </tr>
+
+        <tr class="heading">
+                <td>
+
+                  <input id="check" type="checkbox" name="menu"/>
+                    <label for="check">
+                    <?php
+                    echo "Bank and Accounts"
+                    ?>
+                    </label>
+
+                  <ul class="submenu">
+                  <?php
+                    echo "10401 Banks"
+                    ?>
+                  </ul>
+
+                <td>
+        </tr>
+
+        
         
         <tr class="details">
             <td>
             <?php
-                echo "Check";
             ?>
             </td>
             
             <td>
             <?php
-                echo "1000";
             ?>
             </td>
         </tr>
