@@ -1,101 +1,143 @@
 [
-    [
-        {
-            "name"  : "ASSETS",
-            "value" : 11347.78,
-            "child" :
-            {
-                "name" : "Current Assets",
-                "value" : 11347.78,
-                "child" : 
-                [
-                    {
-                    "name" : "Bank and Cash Accounts",
-                    "value" : 102.78,
-                    "child" :
-                    [
-                        {
-                        "name"  : "101401 Bank",
-                        "value" : 102.78
-                        }
-                        
-                    ],
-                    "name1" : "Receivables",
-                    "value1" : 10495,
-                    "child1" : 
-                    [
-                        {
-                            "name"  : "101200 Account Receivable",
-                            "value" : 10495
-                        }
-                    ],
-                    "name2" : "Current Assets",
-                    "value2" : 750,
-                    "name3" : "Prepayments",
-                    "value3" : 0
-                    }
-                ],
-                "name1" : "Plus Fixed Assets",
-                "value1" : 0,
+	{ 
+		"name" 	: "ASSETS",
+		"value"	: 11347.78 ,
+		"child" :
+				[
+					{
+						"name"	: "Current Assets",
+						"value"	: 11347.78 ,
+						"child"	: 
+								[
+									{
+										"name" 	: "Bank and Cash Accounts",
+										"value"	: 102.78 ,
+										"child" :
+												[
+													{
+														"name"	: "101401 Bank",
+														"value"	: 102.78 	
+													}
+												]
+									},
+									
+									{
+										"name" 	: "Receivables",
+										"value"	: 10495.00 ,
+										"child" :
+												[
+													{
+														"name"	: "101200 Account Receivable",
+														"value"	: 10495.00 	
+													}
+												]
+									},
+									
+									{
+										"name" 	: "Current Assets",
+										"value"	: 750.00 
+									},
 
-                "name2" : "Plus Non-current Assets",
-                "value2" : 0
-            }
-         }
-    ],
-    [
-        {
-            "name"  : "LIABILITIES",
-            "value" : 15749.99,
-            "child" :
-            {
-                "name" : "Current Liabilities",
-                "child" : 
-                [
-                    {
-                    "name" : "Current Liabilities",
-                    "value" : 0,
+									{
+										"name" 	: "Prepayments",
+										"value"	: 0.00 
+									}
+								] 
+					},
+						
+					{
+						"name"	: "Plus Fixed Assets",
+						"value"	:  0.00 
+					},
 
-                    "name1" : "Payables",
-                    "value1" : 15749.99
-                    }
-                ],
-                "name1" : "Plus Non-current Liabilities",
-                "value1" : 0
-            }
-        }
-    ],
-    [
-        {
-            "name"  : "EQUITY",
-            "value" : -4402.21,
-            "child" :
-            {
-                "name"   : "Unallocated Earnings",
-                "value"  : -4402.21,
-                "child"  :
-                [{
-                    "name"   : "Current Year Unallocated Earnings ",
-                    "value"  : 0,
-                    "child"  :
-                    [{
-                        "name"   : "Current Year Earnings ",
-                        "value"  : 0,
-                        "name1"  : "Current Year Allocated Earnings ",
-                        "value1" : 0
-                    }],
-                    "name1"  : "Previous Years Unallocated Earnings",
-                    "value1" : -4402.21
-                }],
-                "name1"  : "Retained Earnings",
-                "value1" : 0
-            }
-        }
-    ],
-    [
-        {
-            "name"  : "LIABILITIES + EQUITY",
-            "value" : 11347.78
-        }
-    ]
+					{
+						"name"	: "Plus Non-Current Assets",
+						"value"	: 0.00 
+					}
+				]
+	}
 ]
+
+[
+	{
+		"name"	: "LIABILITIES",
+		"value"	: 15749.99 ,
+		"child"	:
+				[
+					{
+						"name"	: "Current Liabilities",
+						"value"	: 15749.99 ,
+						"child"	: 
+								[
+									{
+										"name"	: "Current Liabilities",
+										"value"	: 0.00 ,
+									},
+
+									{
+										"name"	: "Payables",
+										"value"	: 15749 ,
+									}
+								]
+					},
+
+					{
+						"name"	: "Plus Non-current Liabilities",
+						"value"	: 0.00 ,
+					}
+				]
+	}
+]
+
+[
+	{
+		"name"	: "EQUITY",
+		"value"	: -4402.21 ,
+		"child"	: 
+				[
+					{
+						"name"	: "Unallocated Earnings",
+						"value"	: -4402.21 ,
+						"child"	: 
+								[
+									{
+										"name"	: "Current Year Unallocated Earnings",
+										"value"	: 0.00 ,
+										"child"	:
+												[
+													{
+														"name"	: "Current Year Earnings",
+														"value"	: 0.00,
+													},
+						
+													{
+														"name"	: "Current Year Allocated Earnings",
+														"value"	: 0.00,
+													}
+												]
+									},
+
+									{
+										"name"	: "Previous Year Unallocated Earnings",
+										"value"	: -4402.21 ,
+									}
+								]						
+					},
+
+					{
+						"name"	: "Retained Earnings",
+						"value"	: 0.00 ,
+					}
+	
+				]
+	}
+]
+
+[
+	{
+		"name"	: "LIABILITIES + EQUITY",
+		"value"	: 11347.78
+	}
+]
+	
+		
