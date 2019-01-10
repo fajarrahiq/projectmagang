@@ -1,4 +1,2 @@
 var d = new Date();
-document.getElementById("demo").innerHTML = d.toDateString();
-
-
+document.getElementById("tanggal").innerHTML = d.toDateString();
