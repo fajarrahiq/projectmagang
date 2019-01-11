@@ -77,6 +77,12 @@ body {
   font-weight: normal;
 }
 
+#undrop {
+  padding-left: 15pt;
+  font-size: 9pt;
+  font-weight: normal;
+}
+
 p.title {
   font-size: 12pt;
   font-weight: bold;
