@@ -55,10 +55,7 @@
 						"value"	: 0.00 
 					}
 				]
-	}
-]
-
-[
+	},
 	{
 		"name"	: "LIABILITIES",
 		"value"	: 15749.99 ,
@@ -71,25 +68,22 @@
 								[
 									{
 										"name"	: "Current Liabilities",
-										"value"	: 0.00 ,
+										"value"	: 0.00 
 									},
 
 									{
 										"name"	: "Payables",
-										"value"	: 15749 ,
+										"value"	: 15749 
 									}
 								]
 					},
 
 					{
 						"name"	: "Plus Non-current Liabilities",
-						"value"	: 0.00 ,
+						"value"	: 0.00 
 					}
 				]
-	}
-]
-
-[
+	},
 	{
 		"name"	: "EQUITY",
 		"value"	: -4402.21 ,
@@ -107,37 +101,32 @@
 												[
 													{
 														"name"	: "Current Year Earnings",
-														"value"	: 0.00,
+														"value"	: 0.00
 													},
 						
 													{
 														"name"	: "Current Year Allocated Earnings",
-														"value"	: 0.00,
+														"value"	: 0.00
 													}
 												]
 									},
 
 									{
 										"name"	: "Previous Year Unallocated Earnings",
-										"value"	: -4402.21 ,
+										"value"	: -4402.21 
 									}
 								]						
 					},
 
 					{
 						"name"	: "Retained Earnings",
-						"value"	: 0.00 ,
+						"value"	: 0.00 
 					}
 	
 				]
-	}
-]
-
-[
+	},
 	{
 		"name"	: "LIABILITIES + EQUITY",
 		"value"	: 11347.78
 	}
-]
-	
-		
+]	
