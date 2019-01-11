@@ -74,7 +74,7 @@ body {
 
 #subhead {
   font-size: 8pt;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 p.title {
@@ -415,17 +415,20 @@ template {
   padding-left: 20px;
   padding-bottom: 7px;
   padding-top: 7px;
+  color : gray;
   background-color:transparent;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   
 }
 .card-body-child {
-  -ms-flex: 0.5 0.5 auto;
-  flex: 0.5 0.5 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   padding-left: 50px;
+  padding-top: 10px;
   color: #007bff;
   background-color:transparent;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
 }
 .card-body-child2 {
   -ms-flex: 0.5 0.5 auto;
