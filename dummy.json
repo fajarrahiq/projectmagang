@@ -55,10 +55,7 @@
 						"value"	: 0.00 
 					}
 				]
-	}
-]
-
-[
+	},
 	{
 		"name"	: "LIABILITIES",
 		"value"	: 15749.99 ,
@@ -86,10 +83,7 @@
 						"value"	: 0.00 
 					}
 				]
-	}
-]
-
-[
+	},
 	{
 		"name"	: "EQUITY",
 		"value"	: -4402.21 ,
@@ -130,14 +124,9 @@
 					}
 	
 				]
-	}
-]
-
-[
+	},
 	{
 		"name"	: "LIABILITIES + EQUITY",
 		"value"	: 11347.78
 	}
-]
-	
-		
+]	
