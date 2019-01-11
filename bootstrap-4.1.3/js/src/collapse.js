@@ -14,7 +14,9 @@ const Collapse = (($) => {
    * Constants
    * ------------------------------------------------------------------------
    */
-
+  var d = new Date();
+  document.getElementById("tanggal").innerHTML = d.toDateString();
+  
   const NAME                = 'collapse'
   const VERSION             = '4.1.3'
   const DATA_KEY            = 'bs.collapse'

@@ -66,6 +66,29 @@ body {
   
 }
 
+#head {
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+
+#subhead {
+  font-size: 8pt;
+  font-weight: bold;
+}
+
+p.title {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #343a40;
+}
+
+p.subtitle {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #343a40;
+}
+
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
@@ -84,6 +107,8 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 8pt;
+  padding-left: 10pt;
 }
 
 abbr[title],
@@ -406,7 +431,7 @@ template {
   -ms-flex: 0.5 0.5 auto;
   flex: 0.5 0.5 auto;
   padding-left: 50px;
-  color : black;
+  color : rgb(0, 0, 0);
   background-color:transparent;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
