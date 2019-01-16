@@ -1,4 +1,6 @@
-[
+{
+	"object1": [
+
 	{ 
 		"name" 	: "ASSETS",
 		"value"	: 11347.78 ,
@@ -55,7 +57,9 @@
 						"value"	: 0.00 
 					}
 				]
-	},
+	}
+],
+	"object2":[
 	{
 		"name"	: "LIABILITIES",
 		"value"	: 15749.99 ,
@@ -83,7 +87,9 @@
 						"value"	: 0.00 
 					}
 				]
-	},
+	}
+],
+	"object3":[
 	{
 		"name"	: "EQUITY",
 		"value"	: -4402.21 ,
@@ -124,9 +130,12 @@
 					}
 	
 				]
-	},
+	}
+],
+	"object4":[
 	{
 		"name"	: "LIABILITIES + EQUITY",
 		"value"	: 11347.78
 	}
-]	
+]
+}
