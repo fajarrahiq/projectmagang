@@ -683,15 +683,14 @@ template {
 }
 
 .accordion:after {
-  content: "\25B2";
-  color: black;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+  content: "\25BC";
+  color:gray;
+  float:left;
 }
 
 .active:after {
-  content: "\25BC";
+  content: "\25B2";
+
 }
 
 .panel {
