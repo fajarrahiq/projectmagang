@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="iconate.min.css">
     <title>Balance Sheet Report</title>
   </head>
 
   <body>
+
     <div class="container">
       <h1>Balance Sheet</h1>
       <p align="right" id="tanggal"></p>
@@ -20,7 +22,7 @@
 <!---PART1--->
 
           <div id="accordion" >
-            <div class="card-body">
+            <div class="accordion">
               <div role="tab" id="headingOne">  
               <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 Bank and Cash Accounts
@@ -28,6 +30,7 @@
               </div>
             </div>
             </div>
+            <br>
 
           <div id="collapseOne" class="collapse" data-parent="#accordion" role="tabpanel" aria-labelledby="headingOne">
             <div class="card-body-child">
@@ -36,7 +39,7 @@
           </div>
 
           <div id="accordion" role="tablist">
-              <div class="card-body">
+              <div class="accordion">
                 <div role="tab" id="headingTwo"> 
                 <a data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   Receivables
@@ -44,6 +47,7 @@
                 </div>
               </div>
               </div>
+            <br>
   
             <div id="collapseTwo" class="collapse" data-parent="#accordion" role="tabpanel" aria-labelledby="headingTwo">
               <div class="card-body-child">
@@ -68,7 +72,7 @@
       </div>
 
         <div id="accordion" role="tablist">
-          <div class="card-body">
+          <div class="accordion ">
             <div role="tab" id="headingFour">
                 <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                   Payables
@@ -76,6 +80,7 @@
             </div>
           </div>
         </div>
+        <br>
 
             <div id="collapseFour" class="collapse" data-parent="#accordion" role="tabpanel" aria-labelledby="headingFour">
                 <div class="card-body-child">

@@ -681,3 +681,23 @@ template {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+.accordion:after {
+  content: "\25B2";
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\25BC";
+}
+
+.panel {
+  padding: 0 18px;  
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

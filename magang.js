@@ -1,11 +1,18 @@
 var d = new Date();
 document.getElementById("tanggal").innerHTML = d.toDateString();
 
-function myFunction() {
-    var x = document.getElementById("headingOne");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
     } else {
-      x.style.display = "none";
-    }
-  }
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+  
