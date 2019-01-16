@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="ajax.js"> </script>
+
+    <script>
+
+        $(function () {
+
+            var object1 = [];
+
+            $.getJSON('dummy.json', function (data) {
+                $.each(data.object1, function (i, f) {
+                    var tblRow = "<tr>" + "<td>" + f.name + "</td>" + "<td>" + f.value + "</td>" + "<td>" //ASSETS
+                        $(tblRow).appendTo("#userdata tbody");
+
+                        var tblRowChild = "<tr>" + "<td>" + f.child[0].name + "</td>" + "<td>" + f.child[0].value + "</td>" + "<td>" //Current Assets
+                            $(tblRowChild).appendTo("#userdata tbody");
+
+                            var tblRowChild0 = "<tr>" + "<td>" + f.child[0].child[0].name + "</td>" + "<td>" + f.child[0].child[0].value + "</td>" + "<td>" //Bank and Cash Accounts
+                                $(tblRowChild0).appendTo("#userdata tbody");
+                                var tblRowChild0A = "<tr>" + "<td>" + f.child[0].child[0].child[0].name + "</td>" + "<td>" + f.child[0].child[0].child[0].value + "</td>" + "<td>" //101401 Bank
+                                    $(tblRowChild0A).appendTo("#userdata tbody");
+                            
+                            var tblRowChild1 = "<tr>" + "<td>" + f.child[0].child[1].name + "</td>" + "<td>" + f.child[0].child[1].value + "</td>" + "<td>" //Receivables
+                                $(tblRowChild1).appendTo("#userdata tbody");
+                                var tblRowChild1A = "<tr>" + "<td>" + f.child[0].child[1].child[0].name + "</td>" + "<td>" + f.child[0].child[1].child[0].value + "</td>" + "<td>" //101200 Account Receivable
+                                    $(tblRowChild1A).appendTo("#userdata tbody");
+
+                            var tblRowChild2 = "<tr>" + "<td>" + f.child[0].child[2].name + "</td>" + "<td>" + f.child[0].child[2].value + "</td>" + "<td>" //Current Assets
+                                $(tblRowChild2).appendTo("#userdata tbody");
+
+                            var tblRowChild3 = "<tr>" + "<td>" + f.child[0].child[3].name + "</td>" + "<td>" + f.child[0].child[3].value + "</td>" + "<td>" //Prepayments
+                                $(tblRowChild3).appendTo("#userdata tbody");
+
+                        var tblRowChild_1 = "<tr>" + "<td>" + f.child[1].name + "</td>" + "<td>" + f.child[1].value + "</td>" + "<td>" //Plus Fixed Assets
+                            $(tblRowChild_1).appendTo("#userdata tbody");
+
+                        var tblRowChild_2 = "<tr>" + "<td>" + f.child[2].name + "</td>" + "<td>" + f.child[2].value + "</td>" + "<td>" //Plus Non-Current Assets
+                            $(tblRowChild_2).appendTo("#userdata tbody");
+                });
+            });
+
+            var object2 = [];
+
+            $.getJSON('dummy.json', function (data) {
+                $.each(data.object2, function (i, f) {
+                    var tblRow = "<tr>" + "<td>" + f.name + "</td>" + "<td>" + f.value + "</td>" + "<td>" //LIABILITIES
+                        $(tblRow).appendTo("#userdata tbody");
+
+                        var tblRowChild = "<tr>" + "<td>" + f.child[0].name + "</td>" + "<td>" + f.child[0].value + "</td>" + "<td>" //Current Liabilities
+                            $(tblRowChild).appendTo("#userdata tbody");
+
+                            var tblRowChild0 = "<tr>" + "<td>" + f.child[0].child[0].name + "</td>" + "<td>" + f.child[0].child[0].value + "</td>" + "<td>" //Current Liabilities
+                                $(tblRowChild0).appendTo("#userdata tbody");
+
+                            var tblRowChild1 = "<tr>" + "<td>" + f.child[0].child[1].name + "</td>" + "<td>" + f.child[0].child[1].value + "</td>" + "<td>" //Payables
+                                $(tblRowChild1).appendTo("#userdata tbody");
+
+                        var tblRowChild_1 = "<tr>" + "<td>" + f.child[1].name + "</td>" + "<td>" + f.child[1].value + "</td>" + "<td>" //Plus Non-current Liabilities
+                            $(tblRowChild_1).appendTo("#userdata tbody");
+                });
+            });
+
+            var object3 = [];
+
+            $.getJSON('dummy.json', function (data) {
+                $.each(data.object3, function (i, f) {
+                    var tblRow = "<tr>" + "<td>" + f.name + "</td>" + "<td>" + f.value + "</td>" + "<td>" //EQUITY
+                        $(tblRow).appendTo("#userdata tbody");
+
+                        var tblRowChild = "<tr>" + "<td>" + f.child[0].name + "</td>" + "<td>" + f.child[0].value + "</td>" + "<td>" //Unallocated Earnings
+                            $(tblRowChild).appendTo("#userdata tbody");
+
+                            var tblRowChild0 = "<tr>" + "<td>" + f.child[0].child[0].name + "</td>" + "<td>" + f.child[0].child[0].value + "</td>" + "<td>" //Current Year Unallocated Earnings
+                                $(tblRowChild0).appendTo("#userdata tbody");
+                                var tblRowChild0A = "<tr>" + "<td>" + f.child[0].child[0].child[0].name + "</td>" + "<td>" + f.child[0].child[0].child[0].value + "</td>" + "<td>" //Current Year Earnings
+                                    $(tblRowChild0A).appendTo("#userdata tbody");
+                                var tblRowChild1A = "<tr>" + "<td>" + f.child[0].child[0].child[1].name + "</td>" + "<td>" + f.child[0].child[0].child[1].value + "</td>" + "<td>" //Current Year Allocated Earnings
+                                    $(tblRowChild1A).appendTo("#userdata tbody");
+                            
+                            var tblRowChild1 = "<tr>" + "<td>" + f.child[0].child[1].name + "</td>" + "<td>" + f.child[0].child[1].value + "</td>" + "<td>" //Previous Year Unallocated Earnings
+                                $(tblRowChild1).appendTo("#userdata tbody");
+
+                        var tblRowChild_1 = "<tr>" + "<td>" + f.child[1].name + "</td>" + "<td>" + f.child[1].value + "</td>" + "<td>" //Retained Earnings
+                            $(tblRowChild_1).appendTo("#userdata tbody");
+                });
+            });
+
+            var object4 = [];
+
+            $.getJSON('dummy.json', function (data) {
+                $.each(data.object4, function (i, f) {
+                    var tblRow = "<tr>" + "<td>" + f.name + "</td>" + "<td>" + f.value + "</td>" + "<td>"
+                    $(tblRow).appendTo("#userdata tbody");
+                });
+
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+     <table id="userdata">
+                <tbody>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
