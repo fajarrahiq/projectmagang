@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="iconate.min.css">
+  <title>Balance Sheet Report</title>
+  <script type="text/javascript" src="ajax.js"> </script>
+  <script>
+
+    $(function () {
+
+      var object2 = [];
+
+      $.getJSON('data.json', function (data) {
+        console.log("DATA",data);
+        
+        var last_level = 0;
+        var last_container = [];
+        last_container[last_level] = ".container";
+        $.each(data, function (i, f) {
+          var container = last_container[f.level];
+
+          if (container == undefined) {
+            var i = f.level;
+            while (i > 0) {
+              if (container = undefined)
+                break;
+              i--;
+              container = last_container[f.level-1];
+            }
+          }
+          $(container).append("<div style='margin-left:10px'>"+f.name+"="+f.balance+"<span id='collapse"+i+"'></span></div>")
+          
+          last_level = f.level;
+          last_container[f.level+1] = "#collapse"+i;
+        });
+        
+      });
+
+    });
+
+  </script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Balance Sheet</h1>
+    <p align="right" id="tanggal"></p>
+    <table id="datavalue">
+      <tbody>
+      </tbody>
+    </table>
+
+  <script type="text/javascript" src="magang.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

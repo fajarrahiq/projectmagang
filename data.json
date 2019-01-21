@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Balance Sheet",
+        "level": 0,
+        "account_type": "sum",
+        "balance": -27150010963.0,
+        "type": "report"
+    },
+    {
+        "name": "Assets",
+        "level": 1,
+        "account_type": "account_type",
+        "balance": 19636000.0,
+        "type": "report"
+    },
+    {
+        "name": "12301 Piutang Dagang",
+        "level": 4,
+        "account_type": "receivable",
+        "balance": 19636000.0,
+        "type": "account"
+    },
+    {
+        "name": "Liability",
+        "level": 1,
+        "account_type": "sum",
+        "balance": -27169646963.0,
+        "type": "report"
+    },
+    {
+        "name": "Liability",
+        "level": 2,
+        "account_type": "account_type",
+        "balance": -27169646963.0,
+        "type": "report"
+    },
+    {
+        "name": "21101 Hutang Usaha - Pemasok",
+        "level": 4,
+        "account_type": "payable",
+        "balance": -5432435.0,
+        "type": "account"
+    },
+    {
+        "name": "21102 Hutang Usaha - bukan Pemasok",
+        "level": 4,
+        "account_type": "payable",
+        "balance": -27164214528.0,
+        "type": "account"
+    },
+    {
+        "name": "Profit (Loss) to report",
+        "level": 2,
+        "account_type": "account_report",
+        "balance": 0.0,
+        "type": "report"
+    }
+]
