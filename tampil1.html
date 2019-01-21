@@ -16,46 +16,50 @@
       var object2 = [];
 
       $.getJSON('data.json', function (data) {
-        console.log("DATA",data);
-        
-        var last_level = 0;
-        var last_container = [];
-        last_container[last_level] = ".container";
-        $.each(data, function (i, f) {
-          var container = last_container[f.level];
+        console.log("DATA", data);
 
-          if (container == undefined) {
-            var i = f.level;
-            while (i > 0) {
-              if (container = undefined)
-                break;
-              i--;
-              container = last_container[f.level-1];
-            }
-          }
-          $(container).append("<div style='margin-left:10px'>"+f.name+"="+f.balance+"<span id='collapse"+i+"'></span></div>")
+        // var last_level = 0;
+        // var last_container = [];
+        // last_container[last_level] = ".container";
+        $.each(data, function (i, f) {
+          // var container = last_container[f.level];
+          // console.log('i='+i);
+          // if (container == undefined) {
+          //   // var j = f.level;
+          //   while ( i > 0) {
+          //     if (container = undefined)
+          //       break;
+          //     i--;
+          //     container = last_container[f.level - 1];
+          //     console.log(f.level)
+          //   }
+          // }
+
+          // $(container).append("<div style='margin-left:20px'>" + f.name + "=" + f.balance + "<span id ='collapse" + i + "'></span></div>")
+          $(".container").append("<div style='margin-left:" +(f.level) * 15 + "px'>" + f.name + "=" + f.balance + "<span id ='collapse" + i + "'></span></div>")
           
-          last_level = f.level;
-          last_container[f.level+1] = "#collapse"+i;
+
+          // last_level = f.level;
+          // last_container[f.level + 1] = "#collapse" + i;
+
         });
-        
+
       });
 
     });
-
   </script>
 </head>
 
 <body>
 
   <div class="container">
-    <h1>Balance Sheet</h1>
+    <!-- <h1>Balance Sheet</h1> -->
     <p align="right" id="tanggal"></p>
-    <table id="datavalue">
-      <tbody>
-      </tbody>
     </table>
+  </div>
+  <div class="container2">
 
+  </div>
   <script type="text/javascript" src="magang.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
