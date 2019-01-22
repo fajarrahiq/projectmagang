@@ -10,6 +10,7 @@
   <title>Balance Sheet Report</title>
   <script type="text/javascript" src="ajax.js"> </script>
   <script>
+<<<<<<< HEAD
       $(function () {
         $.getJSON('data.json', function (data) {
           $.each(data, function (i, f) {
@@ -32,6 +33,46 @@
             $(".panel").append("<div style='margin-left:" + (f.level) * 15 + "px'>" + f.name + "=" + f.balance + "<span id ='collapse" + i + "'></span></div>");
           };
           });
+=======
+
+    $(function () {
+
+      $.getJSON('data.json', function (data) {
+        console.log("DATA", data);
+        var items = [];
+        // var last_level = 0;
+        // var last_container = [];
+        // last_container[last_level] = ".container";
+
+        //Tampil 2 baris 
+        $.each(data, function (i, f) {
+          if(f.level == 0)
+            $(".accordion").append("<a>" + f.name + "=" + f.balance + "</div>") 
+          else if(f.level == 1)
+            $(".accordion").append("<p>" + f.name + "=" + f.balance + "</div>")
+          // else if(f.level == 1)
+          // $(".accordion").append( + f.name + "=" + f.balance + "</div>")
+          // var container = last_container[f.level];
+          // console.log('i='+i);
+          // if (container == undefined) {
+          //   // var j = f.level;
+          //   while ( i > 0) {
+          //     if (container = undefined)
+          //       break;
+          //     i--;
+          //     container = last_container[f.level - 1];
+          //     console.log(f.level)
+          //   }
+          // }
+
+          // $(container).append("<div style='margin-left:20px'>" + f.name + "=" + f.balance + "<span id ='collapse" + i + "'></span></div>")
+          // $(".container").append("<div style='margin-left:" + (f.level) * 15 + "px'>" + f.name + "=" + f.balance + "<span id ='collapse" + i + "'></span></div>")
+
+
+          // last_level = f.level;
+          // last_container[f.level + 1] = "#collapse" + i;
+
+>>>>>>> fe46a9aa0d2d98273a90b46204d66a31e4234f4b
         });
       });
     </script>
@@ -80,7 +121,18 @@
   <div class="container">
     <!-- <h1>Balance Sheet</h1> -->
     <p align="right" id="tanggal"></p>
-    </table>
+
+    <div class="accordion" id="level0">
+      <a data-toggle="collapse" href="#collapseOne">
+
+      </a>
+    </div>
+
+    <div id="collapseOne" class="collapse" data-parent="#accordion">
+        <div class="card-body-child">
+          <p></p>
+        </div>
+      </div>
   </div>
 
     <button class="accordion">Balance Sheet</button>
@@ -93,7 +145,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
