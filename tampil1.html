@@ -10,56 +10,85 @@
   <title>Balance Sheet Report</title>
   <script type="text/javascript" src="ajax.js"> </script>
   <script>
-
-    $(function () {
-
-      var object2 = [];
-
-      $.getJSON('data.json', function (data) {
-        console.log("DATA", data);
-
-        // var last_level = 0;
-        // var last_container = [];
-        // last_container[last_level] = ".container";
-        $.each(data, function (i, f) {
-          // var container = last_container[f.level];
-          // console.log('i='+i);
-          // if (container == undefined) {
-          //   // var j = f.level;
-          //   while ( i > 0) {
-          //     if (container = undefined)
-          //       break;
-          //     i--;
-          //     container = last_container[f.level - 1];
-          //     console.log(f.level)
-          //   }
-          // }
-
-          // $(container).append("<div style='margin-left:20px'>" + f.name + "=" + f.balance + "<span id ='collapse" + i + "'></span></div>")
-          $(".container").append("<div style='margin-left:" +(f.level) * 15 + "px'>" + f.name + "=" + f.balance + "<span id ='collapse" + i + "'></span></div>")
-          
-
-          // last_level = f.level;
-          // last_container[f.level + 1] = "#collapse" + i;
-
+      $(function () {
+        $.getJSON('data.json', function (data) {
+          $.each(data, function (i, f) {
+            if (f.level == 0){
+            $(".panel").append("<div style='margin-left:" + (f.level) * 15 + "px'>" + f.name + "=" + f.balance + "<span id ='collapse" + i + "'></span></div>");
+          };
+          if (f.level == 1){
+            $(".panel").append("<div style='margin-left:" + (f.level) * 15 + "px'>" + f.name + "=" + f.balance + "<span id ='collapse" + i + "'></span></div>");
+          };
+          if (f.level == 2){
+            $(".panel").append("<div style='margin-left:" + (f.level) * 15 + "px'>" + f.name + "=" + f.balance + "<span id ='collapse" + i + "'></span></div>");
+          };
+          if (f.level == 3){
+            $(".panel").append("<div style='margin-left:" + (f.level) * 15 + "px'>" + f.name + "=" + f.balance + "<span id ='collapse" + i + "'></span></div>");
+          };
+          if (f.level == 4){
+            $(".panel").append("<div style='margin-left:" + (f.level) * 15 + "px'>" + f.name + "=" + f.balance + "<span id ='collapse" + i + "'></span></div>");
+          };
+          if (f.level == 5){
+            $(".panel").append("<div style='margin-left:" + (f.level) * 15 + "px'>" + f.name + "=" + f.balance + "<span id ='collapse" + i + "'></span></div>");
+          };
+          });
         });
-
       });
-
-    });
-  </script>
+    </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  </style>
 </head>
 
 <body>
-
   <div class="container">
     <!-- <h1>Balance Sheet</h1> -->
     <p align="right" id="tanggal"></p>
     </table>
   </div>
-  <div class="container2">
 
+    <button class="accordion">Balance Sheet</button>
+    <div class="panel">
+    </div>
   </div>
+
+
   <script type="text/javascript" src="magang.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
