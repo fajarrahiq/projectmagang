@@ -16,3 +16,28 @@ for (i = 0; i < acc.length; i++) {
   });
 }
   
+
+ $(function () {
+        $.getJSON('data.json', function (data) {
+          $.each(data, function (i, f) {
+            if (f.level == 0){
+            $(".panel0").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
+          };
+          if (f.name == "Assets"){
+            $(".panel1").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
+          };
+          if (f.level == 2){
+            $(".panel2").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
+          };
+          if (f.level == 3){
+            $(".panel").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
+          };
+          if (f.level == 4){
+            $(".panel4").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
+          };
+          if (f.level == 5){
+            $(".panel").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
+          };
+          });
+        });
+      });
