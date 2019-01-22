@@ -13,15 +13,21 @@
 
     $(function () {
 
-      var object2 = [];
-
       $.getJSON('data.json', function (data) {
         console.log("DATA", data);
-
+        var items = [];
         // var last_level = 0;
         // var last_container = [];
         // last_container[last_level] = ".container";
+
+        //Tampil 2 baris 
         $.each(data, function (i, f) {
+          if(f.level == 0)
+            $(".accordion").append("<a>" + f.name + "=" + f.balance + "</div>") 
+          else if(f.level == 1)
+            $(".accordion").append("<p>" + f.name + "=" + f.balance + "</div>")
+          // else if(f.level == 1)
+          // $(".accordion").append( + f.name + "=" + f.balance + "</div>")
           // var container = last_container[f.level];
           // console.log('i='+i);
           // if (container == undefined) {
@@ -36,8 +42,8 @@
           // }
 
           // $(container).append("<div style='margin-left:20px'>" + f.name + "=" + f.balance + "<span id ='collapse" + i + "'></span></div>")
-          $(".container").append("<div style='margin-left:" +(f.level) * 15 + "px'>" + f.name + "=" + f.balance + "<span id ='collapse" + i + "'></span></div>")
-          
+          // $(".container").append("<div style='margin-left:" + (f.level) * 15 + "px'>" + f.name + "=" + f.balance + "<span id ='collapse" + i + "'></span></div>")
+
 
           // last_level = f.level;
           // last_container[f.level + 1] = "#collapse" + i;
@@ -55,16 +61,25 @@
   <div class="container">
     <!-- <h1>Balance Sheet</h1> -->
     <p align="right" id="tanggal"></p>
-    </table>
+
+    <div class="accordion" id="level0">
+      <a data-toggle="collapse" href="#collapseOne">
+
+      </a>
+    </div>
+
+    <div id="collapseOne" class="collapse" data-parent="#accordion">
+        <div class="card-body-child">
+          <p></p>
+        </div>
+      </div>
   </div>
-  <div class="container2">
 
   </div>
   <script type="text/javascript" src="magang.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
