@@ -636,20 +636,18 @@ template {
 }
 
 .accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding-left: 20px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  color : gray;
+  background-color:transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .active, .accordion:hover {
-  background-color: #ccc;
+  /* background-color: #ccc; */
 }
 
 /* .accordion:after {
