@@ -4,19 +4,6 @@ document.getElementById("tanggal").innerHTML = d.toDateString();
 var acc = document.getElementsByClassName("accordion");
 var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-  
-
  $(function () {
         $.getJSON('data.json', function (data) {
           $.each(data, function (i, f) {
@@ -29,11 +16,11 @@ for (i = 0; i < acc.length; i++) {
           if (f.name == "Liability" && f.level == 1){
             $(".panel11").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
           };
-          if (f.level == 2 ){
+          if (f.level == 2 && f.name == "Liability" ){
             $(".panel2").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
           };
-          if (f.level == 3){  
-            $(".panel").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
+          if (f.name == "Profit (Loss) to report"){  
+            $(".panel22").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
           };
           if (f.account_type == "payable"){
             $(".panel44").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
