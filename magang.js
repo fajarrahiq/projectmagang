@@ -26,7 +26,7 @@ for (i = 0; i < acc.length; i++) {
           if (f.name == "Assets"){
             $(".panel1").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
           };
-          if (f.name == "Liability"){
+          if (f.name == "Liability" && f.level == 1){
             $(".panel11").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
           };
           if (f.level == 2 ){
