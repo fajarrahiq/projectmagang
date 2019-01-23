@@ -17,10 +17,10 @@ var i;
             $(".panel11").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
           };
           if (f.level == 2 && f.name == "Liability" ){
-            $(".panel2").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
+            $(".panel2").append("<div style='text-indent:" + (f.level) * 25 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
           };
           if (f.name == "Profit (Loss) to report"){  
-            $(".panel22").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
+            $(".panel22").append("<div style='text-indent:" + (f.level) * 25 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
           };
           if (f.account_type == "payable"){
             $(".panel44").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
