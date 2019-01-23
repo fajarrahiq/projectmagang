@@ -1,40 +1,3 @@
-:root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #343a40;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -386,7 +349,7 @@ template {
 
 [hidden] {
   display: none !important;
-}
+} */
 .card {
   position: relative;
   display: -ms-flexbox;
@@ -430,28 +393,11 @@ template {
 .card-body-child {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding-left: 50px;
-  padding-top: 10px;
+  padding-bottom: 10px;
   color: #007bff;
   background-color:transparent;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 
-}
-.card-body-child2 {
-  -ms-flex: 0.5 0.5 auto;
-  flex: 0.5 0.5 auto;
-  padding-left: 50px;
-  color : rgb(0, 0, 0);
-  background-color:transparent;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-}
-.card-body-child3 {
-  -ms-flex: 0.5 0.5 auto;
-  flex: 0.5 0.5 auto;
-  padding-left: 70px;
-  color :gray;
-  background-color:transparent;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card-title {
   margin-bottom: 0.75rem;
@@ -681,22 +627,63 @@ template {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-
-.accordion:after {
-  content: "\25BC";
-  color:gray;
-  float:left;
-}
-
-.active:after {
-  content: "\25B2";
-
-}
-
 .panel {
   padding: 0 18px;  
   background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* .accordion:after {
+  
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+}
+
+.active:after {
+  content: "\2212";
+} */
+
+.panel {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Filter Box */
+
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 25%;
+  margin-left: 75%;
+  font-size: 12px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
 }
