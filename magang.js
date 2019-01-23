@@ -26,13 +26,19 @@ for (i = 0; i < acc.length; i++) {
           if (f.name == "Assets"){
             $(".panel1").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
           };
-          if (f.level == 2){
+          if (f.name == "Liability"){
+            $(".panel11").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
+          };
+          if (f.level == 2 ){
             $(".panel2").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
           };
-          if (f.level == 3){
+          if (f.level == 3){  
             $(".panel").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
           };
-          if (f.level == 4){
+          if (f.account_type == "payable"){
+            $(".panel44").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
+          };
+          if (f.account_type == "receivable"){
             $(".panel4").append("<div style='text-indent:" + (f.level) * 15 + "px'>" + f.name + "<div style='float:right'>" + f.balance + "<span id ='collapse" + i + "'></span></div>");
           };
           if (f.level == 5){
